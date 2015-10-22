@@ -314,7 +314,10 @@ $('.parent-element').clndr({
   constraints: {
     startDate: '2017-12-22',
     endDate: '2018-01-09'
-  }
+  },
+
+  // optionally, you can pass a Moment instance to use instead of the global
+  moment: null
 });
 ```
 
@@ -630,6 +633,10 @@ Todo
 
 Changelog
 =========
+`v1.3.2 ~ 2015-10-21`: Adding moment instance as a config option to use instead of global moment object.
+
+`v1.3.1 ~ 2015-10-21`: Trailing comma removed to work in IE11.
+
 `v1.3.0 ~ 2015-10-13`: Adds destroy and get-instance methods.
 
 `v1.2.16 ~ 2015-08-18`: Resolves issue 200; nextMonth click event was firing previousMonth's event erroneously.
